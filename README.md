@@ -20,19 +20,15 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt  
 ``` 
 
-Для загрузки заготовленных новостей после применения миграций выполните команду:
-```bash
-python manage.py loaddata news.json
-```
-
 Для запуска тестов из корневой папки проекта воспользуйтесь командой:  
 ```bash
 pytest 
 ```
 
-Примените миграции и запустите локальный сервер:  
+Примените миграции, загрузите заготовленные новости и запустите локальный сервер:  
 ```bash
 python manage.py migrate  
+python manage.py loaddata news.json  
 python manage.py runserver  
 ```
   
